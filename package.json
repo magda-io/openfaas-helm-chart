@@ -1,0 +1,20 @@
+{
+  "name": "openfaas-helm-chart",
+  "version": "5.5.5-magda",
+  "description": "Forked version openfaas Helm Chart for Magda",
+  "main": "index.js",
+  "repository": "git@github.com:magda-io/openfaas-helm-chart.git",
+  "author": "Jacky Jiang <jacky.jiang@data61.csiro.au>",
+  "license": "MIT",
+  "scripts": {
+    "helm-lint": "helm lint deploy/openfaas -f deploy/test-deploy.yaml",
+    "helm-docs": "helm-docs -t ./README.md.gotmpl -o ../../README.md",
+    "update-all-charts": "helm dep up ./deploy/openfaas",
+    "add-all-chart-version-changes": "git ls-files -m | grep Chart.yaml | xargs git add && git ls-files -m | grep Chart.lock | xargs git add",
+    "add-all-helm-docs-changes": "yarn helm-docs && git ls-files -m | grep -i readme.md | xargs git add",
+    "version": "yarn update-helm-chart-version && yarn update-all-charts && yarn add-all-chart-version-changes && yarn add-all-helm-docs-changes"
+  },
+  "devDependencies": {
+    "@magda/ci-utils": "^1.0.2"
+  }
+}

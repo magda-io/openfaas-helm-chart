@@ -1,0 +1,25 @@
+name: Main CI Workflow
+
+on: push
+
+env:
+  REPO_NAME: openfaas
+
+jobs:
+  build-test-docker:
+    name: Build, Test & Push to Docker
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: yarn install
+
+      - name: helm-build-dependencies
+        run: helm dep up deploy/${REPO_NAME}
+
+      - run: yarn helm-lint
+
+
