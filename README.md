@@ -116,7 +116,6 @@ Kubernetes: `>= 1.14.0-0`
 | nats.external.port | string | `""` |  |
 | nats.image | string | `"nats-streaming:0.17.0"` |  |
 | nats.resources.requests.memory | string | `"120Mi"` |  |
-| nodeSelector."beta.kubernetes.io/arch" | string | `"amd64"` |  |
 | oauth2Plugin.audience | string | `"https://example.eu.auth0.com/api/v2/"` |  |
 | oauth2Plugin.authorizeURL | string | `"https://example.eu.auth0.com/authorize"` |  |
 | oauth2Plugin.baseHost | string | `"http://auth.oauth.example.com"` |  |
