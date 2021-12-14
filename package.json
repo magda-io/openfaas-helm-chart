@@ -1,6 +1,6 @@
 {
   "name": "openfaas-helm-chart",
-  "version": "5.5.5-magda",
+  "version": "5.5.5-magda.1",
   "description": "Forked version openfaas Helm Chart for Magda",
   "main": "index.js",
   "repository": "git@github.com:magda-io/openfaas-helm-chart.git",

@@ -60,10 +60,6 @@ spec:
             secretName: basic-auth
 
 {{- end }}
-{{- with .Values.nodeSelector }}
-      nodeSelector:
-{{ toYaml . | indent 8 }}
-    {{- end }}
     {{- with .Values.affinity }}
       affinity:
 {{ toYaml . | indent 8 }}

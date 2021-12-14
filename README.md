@@ -1,6 +1,6 @@
 # Openfaas Helm Chart for Magda
 
-![Version: 5.5.5-magda](https://img.shields.io/badge/Version-5.5.5--magda-informational?style=flat-square)
+![Version: 5.5.5-magda.1](https://img.shields.io/badge/Version-5.5.5--magda.1-informational?style=flat-square)
 
 Enable Kubernetes as a backend for OpenFaaS (Functions as a Service)
 
@@ -116,7 +116,6 @@ Kubernetes: `>= 1.14.0-0`
 | nats.external.port | string | `""` |  |
 | nats.image | string | `"nats-streaming:0.17.0"` |  |
 | nats.resources.requests.memory | string | `"120Mi"` |  |
-| nodeSelector."beta.kubernetes.io/arch" | string | `"amd64"` |  |
 | oauth2Plugin.audience | string | `"https://example.eu.auth0.com/api/v2/"` |  |
 | oauth2Plugin.authorizeURL | string | `"https://example.eu.auth0.com/authorize"` |  |
 | oauth2Plugin.baseHost | string | `"http://auth.oauth.example.com"` |  |
