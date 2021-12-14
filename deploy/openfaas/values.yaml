@@ -232,9 +232,6 @@ faasIdler:
     requests:
       memory: "64Mi"
 
-nodeSelector:
-  beta.kubernetes.io/arch: amd64
-
 tolerations: []
 
 affinity: {}
