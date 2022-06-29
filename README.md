@@ -33,7 +33,7 @@ Use as a dependecies of your Magda deployment:
 
 ## Requirements
 
-Kubernetes: `>= 1.14.0-0`
+Kubernetes: `>= 1.17-0`
 
 ## Values
 
