@@ -1,7 +1,7 @@
 apiVersion: v2
 description: Enable Kubernetes as a backend for OpenFaaS (Functions as a Service)
 name: openfaas
-version: 5.5.5-magda.1
+version: 5.5.5-magda.2
 kubeVersion: ">= 1.17-0"
 sources:
   - https://github.com/openfaas/faas
