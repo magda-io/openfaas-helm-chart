@@ -1,6 +1,6 @@
 # Openfaas Helm Chart for Magda
 
-![Version: 5.5.5-magda.1](https://img.shields.io/badge/Version-5.5.5--magda.1-informational?style=flat-square)
+![Version: 5.5.5-magda.2](https://img.shields.io/badge/Version-5.5.5--magda.2-informational?style=flat-square)
 
 Enable Kubernetes as a backend for OpenFaaS (Functions as a Service)
 
@@ -33,7 +33,7 @@ Use as a dependecies of your Magda deployment:
 
 ## Requirements
 
-Kubernetes: `>= 1.14.0-0`
+Kubernetes: `>= 1.17-0`
 
 ## Values
 
