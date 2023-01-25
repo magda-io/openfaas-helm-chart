@@ -17,19 +17,15 @@ Enable Kubernetes as a backend for OpenFaaS (Functions as a Service)
 
 ## How to use
 
-Add Magda Repo:
-
-```bash
-helm repo add magda-io https://charts.magda.io
-```
-
 Use as a dependecies of your Magda deployment:
 ```yaml
 - name: openfaas
-  version: 5.5.5-magda
-  repository: "https://charts.magda.io"
+  version: "5.5.5-magda.2"
+  repository: "oci://ghcr.io/magda-io/charts"
   condition: global.openfaas.enabled
 ```
+
+> Since v2.0.0, we use [Github Container Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry) as our official Helm Chart & Docker Image release registry.
 
 ## Requirements
 
